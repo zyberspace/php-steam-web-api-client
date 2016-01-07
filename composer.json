@@ -1,0 +1,26 @@
+{
+    "name": "zyberspace/steam-web-api-client",
+    "type": "library",
+    "license": "MPL-2.0",
+    "authors": [
+        {
+            "name": "zyberspace",
+            "email": "zyberspace@zyberware.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Zyberspace\\SteamWebApi\\": "lib/Zyberspace/SteamWebApi/"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "require-dev": {
+        "nikic/php-parser": "~2.0"
+    },
+
+    "scripts": {
+        "generate-interfaces": "Zyberspace\\SteamWebApi\\InterfaceGenerator::generateAll"
+    }
+}
