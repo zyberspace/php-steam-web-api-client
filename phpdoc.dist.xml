@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpdoc>
+    <title>zyberware/steam-web-api-client</title>
+    <parser>
+        <target>phpdoc</target>
+    </parser>
+    <transformer>
+        <target>phpdoc</target>
+    </transformer>
+    <logging>
+        <level>quiet</level>
+    </logging>
+    <files>
+        <directory>lib</directory>
+    </files>
+</phpdoc>
