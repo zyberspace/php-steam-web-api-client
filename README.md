@@ -7,7 +7,7 @@ Automatically generated api client for the [Steam Web API](https://developer.val
 
 Automatically generated?
 ------------------------
-Yeah, every API interface (those are not php interfaces) got generated automatically from the [`/ISteamWebAPIUtil/GetSupportedAPIList/v1/`](https://github.com/zyberspace/php-steam-web-api-client/blob/master/lib/Zyberspace/SteamWebApi/Interfaces/ISteamWebAPIUtil.php#L16-23) method. Only the classes outside of the `Interfaces` directory are written from hand.
+Yeah, every API interface (those are not php interfaces) got generated automatically from the [`/ISteamWebAPIUtil/GetSupportedAPIList/v1/`](https://github.com/zyberspace/php-steam-web-api-client/blob/master/lib/Zyberspace/SteamWebApi/Interfaces/ISteamWebAPIUtil.php#L16-L23) method. Only the classes outside of the `Interfaces` directory are written from hand.
 
 This way it is easy for me to keep the api updated because i just need to run the generation command everytime valve changes something.
 
