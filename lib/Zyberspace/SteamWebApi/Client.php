@@ -37,6 +37,6 @@ class Client
             'query' => $parameters
         ));
 
-        return json_decode($response->getBody() ->getContents());
+        return json_decode($response->getBody()->getContents());
     }
 }
