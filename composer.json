@@ -1,7 +1,16 @@
 {
     "name": "zyberspace/steam-web-api-client",
+    "description": "Automatically generated api client for the Steam Web API in style of the google-api-php-client.",
+    "keywords": ["steam", "web", "api", "client", "automatically", "generated"],
     "type": "library",
     "license": "MPL-2.0",
+    "homepage": "https://github.com/zyberspace/php-steam-web-api-client",
+    "support": {
+        "email": "zyberspace@zyberware.org",
+        "issues": "https://github.com/zyberspace/php-steam-web-api-client/issues",
+        "source": "https://github.com/zyberspace/php-steam-web-api-client",
+        "docs": "https://phpdoc.zyberware.org/zyberspace/steam-web-api-client/"
+    },
     "authors": [
         {
             "name": "zyberspace",
@@ -19,7 +28,6 @@
     "require-dev": {
         "nikic/php-parser": "~2.0"
     },
-
     "scripts": {
         "generate-interfaces": "Zyberspace\\SteamWebApi\\InterfaceGenerator::generateAll"
     }
