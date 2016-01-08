@@ -3,7 +3,7 @@ zyberspace/steam-web-api-client
 Automatically generated api client for the [Steam Web API](https://developer.valvesoftware.com/wiki/Steam_Web_API) in style of the [google-api-php-client](https://github.com/google/google-api-php-client/).
 
 [![Packagist](https://img.shields.io/packagist/v/zyberspace/steam-web-api-client.svg)](https://packagist.org/packages/zyberspace/steam-web-api-client)
-[![License](https://img.shields.io/github/license/zyberspace/php-telegram-cli-client.svg)](https://www.mozilla.org/MPL/2.0/)
+[![License](https://img.shields.io/packagist/l/zyberspace/steam-web-api-client.svg)](https://www.mozilla.org/MPL/2.0/)
 
 Automatically generated?
 ------------------------
