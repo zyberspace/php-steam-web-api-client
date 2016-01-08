@@ -58,7 +58,7 @@ If you installed the client with composer like above and already [obtained](http
      $response = $steamUser->GetPlayerSummariesV2('76561198059720690');
      ```
 
-Every method return an object build from the json response. If you want to know more about the response format of every specific method, check the [Steam Web API documentation](https://developer.valvesoftware.com/wiki/Steam_Web_API).
+Every method returns an object build from the json response. If you want to know more about the response format of every specific method, check the [Steam Web API documentation](https://developer.valvesoftware.com/wiki/Steam_Web_API).
 
 ```php
 require('vendor/autoload.php');
