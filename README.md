@@ -34,10 +34,29 @@ Quickstart
 ----------
 If you installed the client with composer like above and already [obtained](http://steamcommunity.com/dev/apikey) your api key from valve these are the 4 steps to use the api:
 
-  1. Require the composer autoloader `require('vendor/autoload.php');`
-  2. Create the Steam Web API Client `$client = new \Zyberspace\SteamWebApi\Client('[your api key goes here]');`
-  3. Create an instance of the api interface you want to use `$steamUser = new \Zyberspace\SteamWebApi\Interfaces\ISteamUser($client);`
-  4. Make your call to the method you want to use `$response = $steamUser->GetPlayerSummariesV2('76561198059720690');`
+  1. Require the composer autoloader
+
+     ```php
+     require('vendor/autoload.php');
+     ```
+
+  2. Create the Steam Web API Client
+
+     ```php
+     $client = new \Zyberspace\SteamWebApi\Client('[your api key goes here]');
+     ```
+
+  3. Create an instance of the api interface you want to use
+
+     ```php
+     $steamUser = new \Zyberspace\SteamWebApi\Interfaces\ISteamUser($client);
+     ```
+
+  4. Make your call to the method you want to use
+
+     ```php
+     $response = $steamUser->GetPlayerSummariesV2('76561198059720690');
+     ```
 
 Every method return an object build from the json response. If you want to know more about the response format of every specific method, check the [Steam Web API documentation](https://developer.valvesoftware.com/wiki/Steam_Web_API).
 
