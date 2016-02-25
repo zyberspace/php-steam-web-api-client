@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <phpdoc>
-    <title>zyberware/steam-web-api-client</title>
+    <title>zyberspace/steam-web-api-client</title>
     <parser>
         <target>phpdoc</target>
     </parser>
