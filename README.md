@@ -70,6 +70,11 @@ $response = $steamUser->GetPlayerSummariesV2(implode(',', $steamIds));
 var_dump($response);
 ```
 
+Working with multiple optional arguments
+----------------------------------------
+
+If the method you need has multiple optional arguments but you don't want to use all of them, set the non-needed arguments to `null`. This is also the default value for them and will therefore be ignored by the client.
+
 Documentation
 -------------
 To create the docs, just run `phpdoc` in the the project-root.  
