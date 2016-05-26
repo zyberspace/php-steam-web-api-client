@@ -20,7 +20,8 @@
     "autoload": {
         "psr-4": {
             "Zyberspace\\SteamWebApi\\": "lib/Zyberspace/SteamWebApi/"
-        }
+        },
+        "classmap": ["lib/Zyberspace/SteamWebApi/Interfaces/"]
     },
     "require": {
         "guzzlehttp/guzzle": "~6.0"
