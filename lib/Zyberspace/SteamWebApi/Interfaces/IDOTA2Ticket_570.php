@@ -6,6 +6,25 @@ use Zyberspace\SteamWebApi\AbstractInterface;
 class IDOTA2Ticket_570 extends AbstractInterface
 {
     /**
+     * /IDOTA2Ticket_570/ClaimBadgeReward/v1/
+     *
+     * @param uint32 $eventid Event ID
+     * @param string $BadgeID The badge ID
+     */
+    public function ClaimBadgeRewardV1($eventid, $BadgeID)
+    {
+        return $this->_call(__METHOD__, 'GET', array('eventid' => $eventid, 'BadgeID' => $BadgeID));
+    }
+    /**
+     * /IDOTA2Ticket_570/GetSteamIDForBadgeID/v1/
+     *
+     * @param string $BadgeID The badge ID
+     */
+    public function GetSteamIDForBadgeIDV1($BadgeID)
+    {
+        return $this->_call(__METHOD__, 'GET', array('BadgeID' => $BadgeID));
+    }
+    /**
      * /IDOTA2Ticket_570/SetSteamAccountPurchased/v1/
      *
      * @param uint32 $eventid Event ID

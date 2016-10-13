@@ -89,6 +89,16 @@ class IDOTA2Match_570 extends AbstractInterface
         return $this->_call(__METHOD__, 'GET', array('partner' => $partner));
     }
     /**
+     * /IDOTA2Match_570/GetTopWeekendTourneyGames/v1/
+     *
+     * @param int32 $partner Which partner's games to use.
+     * @param int32 $home_division Prefer matches from this division.
+     */
+    public function GetTopWeekendTourneyGamesV1($partner, $home_division = null)
+    {
+        return $this->_call(__METHOD__, 'GET', array('partner' => $partner, 'home_division' => $home_division));
+    }
+    /**
      * /IDOTA2Match_570/GetTournamentPlayerStats/v2/
      *
      * @param string $account_id

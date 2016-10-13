@@ -6,6 +6,22 @@ use Zyberspace\SteamWebApi\AbstractInterface;
 class IEconService extends AbstractInterface
 {
     /**
+     * /IEconService/GetTradeHistory/v1/
+     *
+     * @param uint32 $max_trades The number of trades to return information for
+     * @param uint32 $start_after_time The time of the last trade shown on the previous page of results, or the time of the first trade if navigating back
+     * @param uint64 $start_after_tradeid The tradeid shown on the previous page of results, or the ID of the first trade if navigating back
+     * @param bool $navigating_back The user wants the previous page of results, so return the previous max_trades trades before the start time and ID
+     * @param bool $get_descriptions If set, the item display data for the items included in the returned trades will also be returned
+     * @param string $language The language to use when loading item display data
+     * @param bool $include_failed
+     * @param bool $include_total If set, the total number of trades the account has participated in will be included in the response
+     */
+    public function GetTradeHistoryV1($max_trades, $start_after_time, $start_after_tradeid, $navigating_back, $get_descriptions, $language, $include_failed, $include_total)
+    {
+        return $this->_call(__METHOD__, 'GET', array('max_trades' => $max_trades, 'start_after_time' => $start_after_time, 'start_after_tradeid' => $start_after_tradeid, 'navigating_back' => $navigating_back, 'get_descriptions' => $get_descriptions, 'language' => $language, 'include_failed' => $include_failed, 'include_total' => $include_total));
+    }
+    /**
      * /IEconService/GetTradeOffers/v1/
      *
      * @param bool $get_sent_offers Request the list of sent offers.
