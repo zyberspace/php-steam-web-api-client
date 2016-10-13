@@ -17,10 +17,26 @@ use PhpParser\Node;
 
 class InterfaceGenerator
 {
+    static protected function _getApiKey(Event $event) {
+        //Check if api key got passed as argument
+        $arguments = $event->getArguments();
+        if (isset($arguments[0])) {
+            return $arguments[0];
+        }
+
+        //Check for `.apikey` file in the working directory
+        $composer = $event->getComposer();
+        $apiKeyFile = realpath(implode(DIRECTORY_SEPARATOR, [__DIR__, '..', '..', '..', '.apikey']));
+        if (is_readable($apiKeyFile)) {
+            return trim(file_get_contents($apiKeyFile));
+        }
+
+        //No api key found, throw Exception
+        throw new \Exception('Please provide a valid api key. Pass it as argument or put it in the `.apikey` file.');
+    }
     static public function generateAll(Event $event)
     {
-        $arguments = $event->getArguments();
-        $client = new Client($arguments[0]);
+        $client = new Client(static::_getApiKey($event));
         $steamWebAPIUtil = new Interfaces\ISteamWebAPIUtil($client);
 
         $interfaces = $steamWebAPIUtil->GetSupportedAPIListV1()->apilist->interfaces;
