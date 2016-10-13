@@ -9,7 +9,7 @@ Automatically generated?
 ------------------------
 Yeah, every API interface (those are not php interfaces) got generated automatically from the [`/ISteamWebAPIUtil/GetSupportedAPIList/v1/`](https://github.com/zyberspace/php-steam-web-api-client/blob/master/lib/Zyberspace/SteamWebApi/Interfaces/ISteamWebAPIUtil.php#L16-L23) method. Only the classes outside of the `Interfaces` directory are written from hand.
 
-This way it is easy for me to keep the api updated because i just need to run the generation command everytime valve changes something.
+This way it is easy for me to keep the api updated because i just need to run the generation command every time valve changes something.
 
 Installation
 ------------
@@ -28,7 +28,7 @@ The client is structured in 3 peaces:
   - The `Client` class which saves your api key and takes care of the actual api calls.
   - The api interfaces which are automatically generated and provide the api methods to call.
   - The `InterfaceGenerator` which generated the interfaces. **You don't need this one except you want to update the saved interface classes.**  
-  (Use it by installing the dev dependencies and the execute `composer generate-interfaces [your api key]}`.)
+  (Use it by installing the dev dependencies and the execute `composer generate-interfaces [your api key]`.)
 
 Quickstart
 ----------
