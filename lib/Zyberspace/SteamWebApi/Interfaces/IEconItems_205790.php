@@ -6,6 +6,16 @@ use Zyberspace\SteamWebApi\AbstractInterface;
 class IEconItems_205790 extends AbstractInterface
 {
     /**
+     * /IEconItems_205790/GetEquippedPlayerItems/v1/
+     *
+     * @param uint64 $steamid The Steam ID to fetch items for
+     * @param uint32 $class_id Return items equipped for this class id
+     */
+    public function GetEquippedPlayerItemsV1($steamid, $class_id)
+    {
+        return $this->_call(__METHOD__, 'GET', array('steamid' => $steamid, 'class_id' => $class_id));
+    }
+    /**
      * /IEconItems_205790/GetPlayerItems/v1/
      *
      * @param uint64 $steamid The Steam ID to fetch items for

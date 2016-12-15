@@ -89,6 +89,30 @@ class IDOTA2Match_205790 extends AbstractInterface
         return $this->_call(__METHOD__, 'GET', array('partner' => $partner));
     }
     /**
+     * /IDOTA2Match_205790/GetTopWeekendTourneyGames/v1/
+     *
+     * @param int32 $partner Which partner's games to use.
+     * @param int32 $home_division Prefer matches from this division.
+     */
+    public function GetTopWeekendTourneyGamesV1($partner, $home_division = null)
+    {
+        return $this->_call(__METHOD__, 'GET', array('partner' => $partner, 'home_division' => $home_division));
+    }
+    /**
+     * /IDOTA2Match_205790/GetTournamentPlayerStats/v1/
+     *
+     * @param string $account_id
+     * @param string $league_id
+     * @param string $hero_id
+     * @param string $time_frame
+     * @param uint64 $match_id
+     * @param uint32 $phase_id
+     */
+    public function GetTournamentPlayerStatsV1($account_id, $league_id = null, $hero_id = null, $time_frame = null, $match_id = null, $phase_id = null)
+    {
+        return $this->_call(__METHOD__, 'GET', array('account_id' => $account_id, 'league_id' => $league_id, 'hero_id' => $hero_id, 'time_frame' => $time_frame, 'match_id' => $match_id, 'phase_id' => $phase_id));
+    }
+    /**
      * /IDOTA2Match_205790/GetTournamentPlayerStats/v2/
      *
      * @param string $account_id

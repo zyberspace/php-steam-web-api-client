@@ -6,6 +6,14 @@ use Zyberspace\SteamWebApi\AbstractInterface;
 class ITFItems_440 extends AbstractInterface
 {
     /**
+     * /ITFItems_440/GetGoldenWrenches/v1/
+     *
+     */
+    public function GetGoldenWrenchesV1()
+    {
+        return $this->_call(__METHOD__, 'GET', array());
+    }
+    /**
      * /ITFItems_440/GetGoldenWrenches/v2/
      *
      */
